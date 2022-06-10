@@ -89,14 +89,14 @@ class HockeyStatisticsApplication:
         print("7 most goals")
 
     def read_data(self) -> None:
-        filename = input("file name: ")
+        filename = "all.json"  # input("file name: ")
         with open(filename) as file:
             season = json.load(file)
             player_count = 0
             for player_stats in season:
                 self.stats.add_player(player_stats)
                 player_count += 1
-            print(f"read the data of {player_count} players")
+            # print(f"read the data of {player_count} players")
 
     def search_for_player(self) -> None:
         """Search by name for a single player's stats and print it
