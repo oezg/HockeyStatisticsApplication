@@ -1,6 +1,8 @@
 # HockeyStatisticsApplication
 An application for examining hockey league statistics from the NHL
 
+To run the application copy "all.json" and "hockey_statistics.py" and type `python3 hockey_statistics.py`.
+
 All the NHL player stats for the 2019-20 season are included in the file "all.json".
 
 The application offers these functionalities:
